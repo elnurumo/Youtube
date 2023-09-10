@@ -1,0 +1,239 @@
+  html {
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+
+      .dark {
+          background-color: #181818;
+
+          .navbar-area {
+              background-color: var(--bg);
+
+              .burger {
+                  fill: white;
+              }
+
+              .navbar-logo {
+                  .logo-alfabe {
+                      fill: white;
+                  }
+              }
+
+              .search {
+                  background-color: var(--search-bg);
+                  border: 1px solid #303030;
+                  color: white;
+              }
+
+              .search-button {
+                  background-color: #202020;
+                  border: 1px solid #303030;
+              }
+
+              .voice {
+                  fill: #FAFAFA;
+              }
+
+              #toggler {
+                  border: 2px solid white;
+                  background-color: #808080;
+
+                  .ball {
+                      background-color: white;
+                  }
+
+                  .sun {
+                      color: yellow;
+                  }
+              }
+          }
+
+          .navbar-unders {
+              background-color: var(--bg);
+
+              .navbar-link {
+                  color: white;
+
+                  .nav-name {
+                      color: white;
+                  }
+
+                  .nav-name-js {
+                      color: white;
+                  }
+
+                  &:hover {
+                      background-color: #303030;
+                  }
+
+                  .yt-icon {
+                      fill: white;
+                  }
+
+                  .yt-icon-active {
+                      fill: white;
+                  }
+              }
+
+              .active {
+                  .nav-name {
+                      color: white;
+                  }
+              }
+          }
+
+          .sidebar {
+              background-color: var(--bg);
+          }
+
+          .renders-area {
+              background-color: #202020f6;
+              border-top: #303030 solid 1px;
+              border-bottom: #303030 solid 1px;
+
+              .render {
+                  background-color: #373737ea;
+                  color: white;
+
+                  &:not(.active):hover {
+                      background-color: rgba(255, 255, 255, 0.2);
+                  }
+              }
+
+              .active {
+                  background-color: white;
+                  color: #181818;
+              }
+          }
+
+          .videos-area {
+              background-color: #181818;
+
+              .video-about {
+                  color: white;
+              }
+          }
+
+      }
+
+      .light {
+          background-color: white;
+
+          .navbar-area {
+              background-color: white;
+
+              .burger {
+                  fill: #808080;
+              }
+
+              .navbar-logo {
+                  .logo-alfabe {
+                      fill: black;
+                  }
+              }
+
+              .search {
+                  background-color: white;
+                  border: 1px solid #C4C4C4;
+                  color: black;
+              }
+
+              .search-button {
+                  background-color: #C4C4C4;
+                  border: 1px solid #C4C4C4;
+              }
+
+              .voice {
+                  fill: #808080;
+              }
+
+              #toggler {
+                  border: 2px solid #C4C4C4;
+                  background-color: #808080;
+
+                  .ball {
+                      background-color: white;
+                  }
+
+                  .sun {
+                      color: yellow;
+                  }
+              }
+          }
+
+          .navbar-unders {
+              background-color: white;
+
+              .navbar-link {
+                  color: #808080;
+
+                  .nav-name {
+                      //   font-size: 1rem;
+                      color: #808080;
+                  }
+
+
+
+                  .nav-name-js {
+                      //   font-size: 1.8rem;
+                      color: #808080;
+                      //   margin-left: 1rem;
+                  }
+
+                  .nav-name-js:nth-child(1) {
+                      color: black;
+                  }
+
+                  &:hover {
+                      background-color: #C4C4C4;
+                  }
+
+                  .yt-icon {
+                      fill: #808080;
+                  }
+
+                  .yt-icon-active {
+                      fill: #FF0000;
+                  }
+              }
+
+              .active {
+                  .nav-name {
+                      color: #FF0000;
+                  }
+              }
+          }
+
+          .sidebar {
+              background-color: white;
+          }
+
+          .renders-area {
+              background-color: white;
+              border-top: rgba(128, 128, 128, 0.44) solid 1px;
+              border-bottom: rgba(128, 128, 128, 0.44) solid 1px;
+
+              .render {
+                  background-color: #C4C4C466;
+                  color: black;
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+
+                  &:not(.active):hover {
+                      background-color: rgba(255, 255, 255, 0.056);
+                  }
+              }
+
+              .active {
+                  background-color: #282828;
+                  color: white;
+              }
+          }
+
+          .videos-area {
+              background: #C4C4C40F;
+
+              .video-about {
+                  color: black;
+              }
+          }
+      }
+  }

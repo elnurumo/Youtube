@@ -1,0 +1,659 @@
+:root {
+  --bg: #212121ef;
+  --search-bg: #121212;
+  --active-bg: #373737;
+  --active-bg-hover: rgba(255, 255, 255, 0.2);
+  --navbar-bg-hover: #303030;
+  --nav-name-color: #808080;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+html .dark {
+  background-color: #181818;
+}
+html .dark .navbar-area {
+  background-color: var(--bg);
+}
+html .dark .navbar-area .burger {
+  fill: white;
+}
+html .dark .navbar-area .navbar-logo .logo-alfabe {
+  fill: white;
+}
+html .dark .navbar-area .search {
+  background-color: var(--search-bg);
+  border: 1px solid #303030;
+  color: white;
+}
+html .dark .navbar-area .search-button {
+  background-color: #202020;
+  border: 1px solid #303030;
+}
+html .dark .navbar-area .voice {
+  fill: #FAFAFA;
+}
+html .dark .navbar-area #toggler {
+  border: 2px solid white;
+  background-color: #808080;
+}
+html .dark .navbar-area #toggler .ball {
+  background-color: white;
+}
+html .dark .navbar-area #toggler .sun {
+  color: yellow;
+}
+html .dark .navbar-unders {
+  background-color: var(--bg);
+}
+html .dark .navbar-unders .navbar-link {
+  color: white;
+}
+html .dark .navbar-unders .navbar-link .nav-name {
+  color: white;
+}
+html .dark .navbar-unders .navbar-link .nav-name-js {
+  color: white;
+}
+html .dark .navbar-unders .navbar-link:hover {
+  background-color: #303030;
+}
+html .dark .navbar-unders .navbar-link .yt-icon {
+  fill: white;
+}
+html .dark .navbar-unders .navbar-link .yt-icon-active {
+  fill: white;
+}
+html .dark .navbar-unders .active .nav-name {
+  color: white;
+}
+html .dark .sidebar {
+  background-color: var(--bg);
+}
+html .dark .renders-area {
+  background-color: rgba(32, 32, 32, 0.9647058824);
+  border-top: #303030 solid 1px;
+  border-bottom: #303030 solid 1px;
+}
+html .dark .renders-area .render {
+  background-color: rgba(55, 55, 55, 0.9176470588);
+  color: white;
+}
+html .dark .renders-area .render:not(.active):hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+html .dark .renders-area .active {
+  background-color: white;
+  color: #181818;
+}
+html .dark .videos-area {
+  background-color: #181818;
+}
+html .dark .videos-area .video-about {
+  color: white;
+}
+html .light {
+  background-color: white;
+}
+html .light .navbar-area {
+  background-color: white;
+}
+html .light .navbar-area .burger {
+  fill: #808080;
+}
+html .light .navbar-area .navbar-logo .logo-alfabe {
+  fill: black;
+}
+html .light .navbar-area .search {
+  background-color: white;
+  border: 1px solid #C4C4C4;
+  color: black;
+}
+html .light .navbar-area .search-button {
+  background-color: #C4C4C4;
+  border: 1px solid #C4C4C4;
+}
+html .light .navbar-area .voice {
+  fill: #808080;
+}
+html .light .navbar-area #toggler {
+  border: 2px solid #C4C4C4;
+  background-color: #808080;
+}
+html .light .navbar-area #toggler .ball {
+  background-color: white;
+}
+html .light .navbar-area #toggler .sun {
+  color: yellow;
+}
+html .light .navbar-unders {
+  background-color: white;
+}
+html .light .navbar-unders .navbar-link {
+  color: #808080;
+}
+html .light .navbar-unders .navbar-link .nav-name {
+  color: #808080;
+}
+html .light .navbar-unders .navbar-link .nav-name-js {
+  color: #808080;
+}
+html .light .navbar-unders .navbar-link .nav-name-js:nth-child(1) {
+  color: black;
+}
+html .light .navbar-unders .navbar-link:hover {
+  background-color: #C4C4C4;
+}
+html .light .navbar-unders .navbar-link .yt-icon {
+  fill: #808080;
+}
+html .light .navbar-unders .navbar-link .yt-icon-active {
+  fill: #FF0000;
+}
+html .light .navbar-unders .active .nav-name {
+  color: #FF0000;
+}
+html .light .sidebar {
+  background-color: white;
+}
+html .light .renders-area {
+  background-color: white;
+  border-top: rgba(128, 128, 128, 0.44) solid 1px;
+  border-bottom: rgba(128, 128, 128, 0.44) solid 1px;
+}
+html .light .renders-area .render {
+  background-color: rgba(196, 196, 196, 0.4);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+html .light .renders-area .render:not(.active):hover {
+  background-color: rgba(255, 255, 255, 0.056);
+}
+html .light .renders-area .active {
+  background-color: #282828;
+  color: white;
+}
+html .light .videos-area {
+  background: rgba(196, 196, 196, 0.0588235294);
+}
+html .light .videos-area .video-about {
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1315px) {
+  .navbar-area {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .navbar-area .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    margin: 0 auto;
+    width: 98%;
+  }
+  .navbar-area .navbar .navbar-part-1 {
+    display: flex;
+    width: 10%;
+  }
+  .navbar-area .navbar .navbar-part-1 .navbar-burger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .navbar-area .navbar .navbar-part-1 .navbar-logo {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-area .navbar .navbar-part-2 {
+    display: flex;
+    width: 45%;
+  }
+  .navbar-area .navbar .navbar-part-2 .navbar-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-area .navbar .navbar-part-2 .navbar-search .search {
+    width: 85%;
+    padding: 0.8rem;
+    border-right: none;
+  }
+  .navbar-area .navbar .navbar-part-2 .navbar-search .search-button {
+    justify-content: center;
+    padding: 0.492rem;
+    border-left: none;
+    width: 15%;
+    cursor: pointer;
+  }
+  .navbar-area .navbar .navbar-part-2 .navbar-search .voice-icon {
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account #checkbox {
+    display: none;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account #checkbox:checked + .ball {
+    transform: translate(19px, -50%);
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account #toggler {
+    display: block;
+    width: 50px;
+    height: 31px;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .ball,
+  .navbar-area .navbar .navbar-part-3 .navbar-account .sun,
+  .navbar-area .navbar .navbar-part-3 .navbar-account .moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .ball {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    left: 1px;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .ball.right {
+    left: 19px;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .sun {
+    left: 5px;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .moon {
+    right: 5px;
+    color: white;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .account {
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .account-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin-left: 4rem;
+    cursor: pointer;
+  }
+  .navbar-under-area {
+    display: flex;
+  }
+  .navbar-under-area .navbar-unders {
+    display: inline-block;
+    width: 24rem;
+    padding-right: 1rem;
+    height: calc(100vh - 5.4rem);
+    position: sticky;
+    top: 5.32rem;
+  }
+  .navbar-under-area .navbar-unders .navbar-links {
+    margin: 0 auto;
+    width: 100%;
+    margin: 0.8rem 0;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .navbar-link {
+    display: flex;
+    font-size: 1.2rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .nav-icon {
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .nav-name {
+    font-size: 1.8rem;
+  }
+  .navbar-under-area .navbar-unders .sidebar {
+    display: inline-block;
+    width: 7rem;
+    padding-right: 1rem;
+    height: calc(100vh - 5.6rem);
+    position: sticky;
+    top: 5.3rem;
+  }
+  .navbar-under-area .basic-area {
+    display: inline-block;
+    width: 100%;
+  }
+  .navbar-under-area .basic-area .renders-area {
+    display: flex;
+    position: sticky;
+    top: 5.32rem;
+    overflow-x: scroll;
+    overflow-x: hidden;
+  }
+  .navbar-under-area .basic-area .renders-area .render {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap row;
+    padding: 5px 5px 5px 5px;
+    margin: 1rem 0.5rem;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: 300ms;
+  }
+  .navbar-under-area .basic-area .renders-area .render:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .navbar-under-area .basic-area .renders-area .render:nth-child(1) {
+    margin-left: 3rem;
+  }
+  .navbar-under-area .basic-area .videos-area .videos {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 96%;
+    margin-top: 3.5rem;
+  }
+  .navbar-under-area .basic-area .videos-area .videos .video {
+    margin-left: 1rem;
+    width: 25%;
+    cursor: pointer;
+  }
+  .navbar-under-area .basic-area .videos-area .videos .video img {
+    width: 95%;
+  }
+  .navbar-under-area .basic-area .videos-area .videos .video .video-account {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .navbar-under-area .basic-area .videos-area .videos .video .video-account img {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar-under-area .basic-area .videos-area .videos .video .video-account .video-about {
+    margin-left: 1.5rem;
+  }
+  .navbar-under-area .basic-area .videos-area .videos .video .video-account .video-about h2 {
+    font-size: 1.4rem;
+  }
+  .navbar-under-area .basic-area .videos-area .videos .video .video-account .video-about .about {
+    margin-top: 1rem;
+  }
+  .navbar-under-area .basic-area .videos-area .videos .video .video-account .video-about p {
+    color: #808080;
+  }
+}
+@media (max-width: 1314px) {
+  .navbar-area {
+    position: sticky;
+    top: 0;
+  }
+  .navbar-area .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    margin: 0 auto;
+    width: 98%;
+  }
+  .navbar-area .navbar .navbar-part-1 {
+    display: flex;
+    width: 10%;
+  }
+  .navbar-area .navbar .navbar-part-1 .navbar-burger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .navbar-area .navbar .navbar-part-1 .navbar-logo {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-area .navbar .navbar-part-2 {
+    display: flex;
+    width: 45%;
+  }
+  .navbar-area .navbar .navbar-part-2 .navbar-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-area .navbar .navbar-part-2 .navbar-search .search {
+    width: 85%;
+    padding: 0.8rem;
+    border-right: none;
+  }
+  .navbar-area .navbar .navbar-part-2 .navbar-search .search-button {
+    justify-content: center;
+    padding: 0.5rem;
+    border-left: none;
+    box-shadow: inset 1px 0px 0px #B2B2B2;
+    width: 15%;
+    cursor: pointer;
+  }
+  .navbar-area .navbar .navbar-part-2 .navbar-search .voice-icon {
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account #checkbox {
+    display: none;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account #checkbox:checked + .ball {
+    transform: translate(19px, -50%);
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account #toggler {
+    display: block;
+    width: 50px;
+    height: 31px;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .ball,
+  .navbar-area .navbar .navbar-part-3 .navbar-account .sun,
+  .navbar-area .navbar .navbar-part-3 .navbar-account .moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .ball {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    left: 1px;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .ball.right {
+    left: 19px;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .sun {
+    left: 5px;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .moon {
+    right: 5px;
+    color: white;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .account {
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  .navbar-area .navbar .navbar-part-3 .navbar-account .account-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin-left: 4rem;
+    cursor: pointer;
+  }
+  .navbar-under-area {
+    display: flex;
+  }
+  .navbar-under-area .navbar-unders {
+    display: inline-block;
+    width: 7rem;
+    height: calc(100vh - 5.4rem);
+    position: sticky;
+    top: 5.3rem;
+  }
+  .navbar-under-area .navbar-unders .navbar-links {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .navbar-link {
+    display: flex;
+    font-size: 1.2rem;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .navbar-link .active {
+    background-color: #373737;
+    color: #000000;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .navbar-link .active:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .navbar-under-area .navbar-unders .navbar-links .navbar-link .nav-name {
+    font-size: 1rem;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .navbar-link .nav-name-js {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .navbar-link-js {
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .hidden {
+    display: none;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .active-js {
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .nav-icon {
+    margin-bottom: 0.4rem;
+  }
+  .navbar-under-area .navbar-unders .navbar-links .nav-icon-js {
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+  }
+  .navbar-under-area .sidebar {
+    display: inline-block;
+    width: 24rem;
+    padding-right: 1rem;
+    height: calc(100vh - 5.6rem);
+    position: sticky;
+    top: 5.3rem;
+  }
+  .basic-area {
+    display: inline-block;
+    width: 100%;
+  }
+  .basic-area .renders-area {
+    display: flex;
+    position: sticky;
+    top: 5.3rem;
+    overflow-x: hidden;
+    overflow-x: scroll;
+  }
+  .basic-area .renders-area::-webkit-scrollbar {
+    background: #303030;
+    display: none;
+  }
+  .basic-area .renders-area::-webkit-scrollbar-thumb {
+    background: #303030;
+  }
+  .basic-area .renders-area .render {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap row;
+    padding: 5px;
+    margin: 1rem 0.5rem;
+    color: white;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: 300ms;
+  }
+  .basic-area .renders-area .render:nth-child(1) {
+    margin-left: 3rem;
+  }
+  .basic-area .videos-area .videos {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 96%;
+    margin-top: 3.5rem;
+  }
+  .basic-area .videos-area .videos .video {
+    margin: 0 1rem;
+    width: 25%;
+    cursor: pointer;
+  }
+  .basic-area .videos-area .videos .video img {
+    width: 100%;
+  }
+  .basic-area .videos-area .videos .video .video-account {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .basic-area .videos-area .videos .video .video-account img {
+    width: 40px;
+    height: 40px;
+  }
+  .basic-area .videos-area .videos .video .video-account .video-about {
+    margin-left: 1.5rem;
+  }
+  .basic-area .videos-area .videos .video .video-account .video-about h2 {
+    font-size: 1.3rem;
+  }
+  .basic-area .videos-area .videos .video .video-account .video-about .about {
+    margin-top: 1rem;
+  }
+  .basic-area .videos-area .videos .video .video-account .video-about p {
+    color: #808080;
+  }
+}

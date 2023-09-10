@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="icon" href="./image/logo-youtube.png" type="png">
+    <title>YouTube</title>
+</head>
+
+<body class="dark">
+    <section class="navbar-area dark">
+        <div class="navbar">
+            <div class="navbar-part-1">
+                <div class="navbar-burger"><svg id="burger" xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                        viewBox="0 0 20 15" fill="none">
+                        <path
+                            d="M0.25 14.25H19.75V12H0.25V14.25ZM0.25 8.625H19.75V6.375H0.25V8.625ZM0.25 0.75V3H19.75V0.75H0.25Z"
+                            class="burger" />
+                    </svg></div>
+                <div class="navbar-logo">
+                    <a href="./index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="22" viewBox="0 0 90 22" fill="none">
+                            <path
+                                d="M28.105 4.09133C27.7763 2.85846 26.8037 1.88585 25.5662 1.55252C23.3288 0.954346 14.3516 0.954346 14.3516 0.954346C14.3516 0.954346 5.379 0.954346 3.13699 1.55252C1.90411 1.88129 0.931508 2.85389 0.598174 4.09133C0 6.32878 0 11 0 11C0 11 0 15.6713 0.598174 17.9087C0.926941 19.1416 1.89954 20.1142 3.13699 20.4475C5.379 21.0457 14.3516 21.0457 14.3516 21.0457C14.3516 21.0457 23.3288 21.0457 25.5662 20.4475C26.7991 20.1187 27.7717 19.1461 28.105 17.9087C28.7032 15.6713 28.7032 11 28.7032 11C28.7032 11 28.7032 6.32878 28.105 4.09133Z"
+                                fill="#FF0000" />
+                            <path d="M11.4839 15.306L18.9405 11L11.4839 6.69409V15.306Z" fill="white" />
+                            <path class="logo-alfabe"
+                                d="M41.6621 19.233C41.0959 18.8495 40.6895 18.2559 40.452 17.4477C40.2146 16.6394 40.0913 15.5664 40.0913 14.2239V12.3974C40.0913 11.0413 40.2283 9.9545 40.5023 9.13258C40.7762 8.31066 41.2055 7.71249 41.7854 7.33806C42.3653 6.96363 43.1278 6.77185 44.073 6.77185C45.0046 6.77185 45.7488 6.96363 46.3105 7.34719C46.8721 7.73076 47.2831 8.32893 47.5434 9.14172C47.8036 9.9545 47.9315 11.0413 47.9315 12.3929V14.2193C47.9315 15.5618 47.8036 16.6394 47.5525 17.4522C47.3014 18.265 46.8904 18.8632 46.3196 19.2376C45.7534 19.612 44.9817 19.8038 44.0091 19.8038C43.0137 19.8084 42.2283 19.6166 41.6621 19.233ZM44.8447 17.2604C45 16.8495 45.0822 16.1783 45.0822 15.2513V11.3289C45.0822 10.4248 45.0046 9.76729 44.8447 9.34719C44.6895 8.93167 44.4109 8.72162 44.0137 8.72162C43.6301 8.72162 43.3607 8.93167 43.2009 9.34719C43.0456 9.76272 42.9635 10.4248 42.9635 11.3289V15.2513C42.9635 16.1828 43.0365 16.8541 43.1872 17.2604C43.3379 17.6714 43.6119 17.8769 44.0091 17.8769C44.4109 17.8769 44.6849 17.6714 44.8447 17.2604Z" />
+                            <path class="logo-alfabe"
+                                d="M85.2561 14.2558V14.8905C85.2561 15.6987 85.2789 16.3014 85.3291 16.7078C85.3748 17.1097 85.4752 17.4065 85.6259 17.5891C85.7766 17.7718 86.0095 17.8677 86.3246 17.8677C86.7492 17.8677 87.0415 17.7033 87.1967 17.3745C87.352 17.0457 87.4387 16.4978 87.4524 15.7307L89.8953 15.8722C89.909 15.9818 89.9136 16.1325 89.9136 16.3243C89.9136 17.4887 89.594 18.3562 88.9593 18.9316C88.3246 19.5069 87.425 19.7946 86.2606 19.7946C84.8634 19.7946 83.8862 19.3562 83.3246 18.4795C82.7629 17.6028 82.4844 16.2512 82.4844 14.4156V12.2192C82.4844 10.3288 82.7766 8.9544 83.3565 8.08226C83.9364 7.21467 84.9319 6.78088 86.3428 6.78088C87.3154 6.78088 88.0597 6.95897 88.5803 7.31513C89.1008 7.6713 89.4661 8.22381 89.6807 8.97723C89.8908 9.73066 90.0004 10.7718 90.0004 12.096V14.2512H85.2561V14.2558ZM85.6168 8.95897C85.4752 9.13705 85.3794 9.42929 85.3291 9.83112C85.2789 10.2329 85.2561 10.8494 85.2561 11.6667V12.5708H87.3291V11.6667C87.3291 10.8585 87.3017 10.2466 87.2469 9.83112C87.1921 9.41559 87.0917 9.11879 86.9501 8.94984C86.8086 8.78089 86.5848 8.69413 86.2835 8.69413C85.9821 8.68956 85.7584 8.78089 85.6168 8.95897Z" />
+                            <path class="logo-alfabe"
+                                d="M34.7672 14.0184L31.5435 2.37908H34.3562L35.4841 7.65306C35.7718 8.95443 35.9818 10.0594 36.1188 10.9773H36.201C36.2969 10.3197 36.5069 9.21927 36.8357 7.67132L38.0047 2.37451H40.8174L37.5572 14.0184V19.6028H34.7672V14.0184Z" />
+                            <path class="logo-alfabe"
+                                d="M57.078 7.01831V19.5982H54.8634L54.6168 18.0594H54.5574C53.9547 19.2238 53.0506 19.8037 51.8497 19.8037C51.014 19.8037 50.3976 19.5297 50.0003 18.9818C49.6031 18.4338 49.4067 17.58 49.4067 16.4156V7.01831H52.2378V16.2558C52.2378 16.8174 52.2972 17.2192 52.4204 17.4567C52.5437 17.6941 52.7492 17.8174 53.0369 17.8174C53.2835 17.8174 53.5209 17.7443 53.7446 17.5937C53.9684 17.443 54.1373 17.2512 54.2469 17.0183V7.01831H57.078Z" />
+                            <path class="logo-alfabe"
+                                d="M71.6073 7.01831V19.5982H69.3927L69.1461 18.0594H69.0867C68.484 19.2238 67.5799 19.8037 66.379 19.8037C65.5433 19.8037 64.9269 19.5297 64.5296 18.9818C64.1324 18.4338 63.936 17.58 63.936 16.4156V7.01831H66.7671V16.2558C66.7671 16.8174 66.8265 17.2192 66.9497 17.4567C67.073 17.6941 67.2785 17.8174 67.5662 17.8174C67.8127 17.8174 68.0502 17.7443 68.2739 17.5937C68.4977 17.443 68.6666 17.2512 68.7762 17.0183V7.01831H71.6073Z" />
+                            <path class="logo-alfabe"
+                                d="M64.7767 4.65769H61.9639V19.5983H59.1922V4.65769H56.3794V2.37915H64.7721V4.65769H64.7767Z" />
+                            <path class="logo-alfabe"
+                                d="M80.9821 9.03206C80.8086 8.23754 80.5346 7.6622 80.1511 7.30603C79.7675 6.94987 79.2424 6.77179 78.5711 6.77179C78.0506 6.77179 77.5666 6.91791 77.1145 7.21471C76.6625 7.50695 76.3154 7.89508 76.0689 8.37453H76.046V1.74438H73.3154V19.6028H75.6533L75.941 18.4111H76.0004C76.2195 18.8357 76.5483 19.1691 76.9867 19.4156C77.425 19.6622 77.909 19.7855 78.4433 19.7855C79.4022 19.7855 80.1054 19.3426 80.5574 18.4613C81.0095 17.58 81.2332 16.201 81.2332 14.3243V12.3334C81.2378 10.927 81.1511 9.82658 80.9821 9.03206ZM78.3839 14.1645C78.3839 15.0823 78.3474 15.7992 78.2698 16.3197C78.1967 16.8403 78.0689 17.2102 77.8908 17.4293C77.7127 17.6485 77.4753 17.7581 77.1739 17.7581C76.941 17.7581 76.7264 17.7033 76.5255 17.5937C76.3291 17.4841 76.1647 17.3197 76.0415 17.1006V9.95444C76.1374 9.61197 76.3017 9.33343 76.5346 9.11425C76.7675 8.89508 77.0186 8.78549 77.2926 8.78549C77.5803 8.78549 77.804 8.89964 77.9593 9.12339C78.1145 9.34713 78.2241 9.73069 78.288 10.2604C78.3474 10.7946 78.3794 11.5526 78.3794 12.5389V14.1645H78.3839Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-part-2">
+                <div class="navbar-search">
+                    <input class="search" type="search" placeholder="Search">
+                    <button class="search-button">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 18 18" fill="none">
+                            <path
+                                d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z"
+                                fill="#808080" />
+                        </svg>
+                    </button>
+                    <svg class="voice-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M7.5 4.5C7.5 3.30653 7.97411 2.16193 8.81802 1.31802C9.66193 0.474106 10.8065 0 12 0C13.1935 0 14.3381 0.474106 15.182 1.31802C16.0259 2.16193 16.5 3.30653 16.5 4.5V12C16.5 13.1935 16.0259 14.3381 15.182 15.182C14.3381 16.0259 13.1935 16.5 12 16.5C10.8065 16.5 9.66193 16.0259 8.81802 15.182C7.97411 14.3381 7.5 13.1935 7.5 12V4.5Z"
+                            class="voice" />
+                        <path
+                            d="M5.25 9.75C5.44891 9.75 5.63968 9.82902 5.78033 9.96967C5.92098 10.1103 6 10.3011 6 10.5V12C6 13.5913 6.63214 15.1174 7.75736 16.2426C8.88258 17.3679 10.4087 18 12 18C13.5913 18 15.1174 17.3679 16.2426 16.2426C17.3679 15.1174 18 13.5913 18 12V10.5C18 10.3011 18.079 10.1103 18.2197 9.96967C18.3603 9.82902 18.5511 9.75 18.75 9.75C18.9489 9.75 19.1397 9.82902 19.2803 9.96967C19.421 10.1103 19.5 10.3011 19.5 10.5V12C19.5 13.8593 18.8094 15.6523 17.5622 17.0312C16.3149 18.4101 14.6 19.2766 12.75 19.4625V22.5H17.25C17.4489 22.5 17.6397 22.579 17.7803 22.7197C17.921 22.8603 18 23.0511 18 23.25C18 23.4489 17.921 23.6397 17.7803 23.7803C17.6397 23.921 17.4489 24 17.25 24H6.75C6.55109 24 6.36032 23.921 6.21967 23.7803C6.07902 23.6397 6 23.4489 6 23.25C6 23.0511 6.07902 22.8603 6.21967 22.7197C6.36032 22.579 6.55109 22.5 6.75 22.5H11.25V19.4625C9.40003 19.2766 7.68506 18.4101 6.43782 17.0312C5.19058 15.6523 4.49998 13.8593 4.5 12V10.5C4.5 10.3011 4.57902 10.1103 4.71967 9.96967C4.86032 9.82902 5.05109 9.75 5.25 9.75Z"
+                            class="voice" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="navbar-part-3">
+                <div class="navbar-account">
+                    <label for="" class="account" id="toggler">
+                        <input type="checkbox" id="checkbox">
+                        <span class="ball"></span>
+                        <i class="fa-solid fa-sun sun"></i>
+                        <i class="fa-solid fa-moon moon"></i>
+                    </label>
+                    <svg class="account" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 24"
+                        fill="none">
+                        <path
+                            d="M17.6729 10.5V7C17.6729 6.45 17.2229 6 16.6729 6H4.67285C4.12285 6 3.67285 6.45 3.67285 7V17C3.67285 17.55 4.12285 18 4.67285 18H16.6729C17.2229 18 17.6729 17.55 17.6729 17V13.5L21.6729 17.5V6.5L17.6729 10.5ZM14.6729 13H11.6729V16H9.67285V13H6.67285V11H9.67285V8H11.6729V11H14.6729V13Z"
+                            class="voice" />
+                    </svg>
+                    <svg class="account" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                        fill="none">
+                        <path
+                            d="M4.67285 8H8.67285V4H4.67285V8ZM10.6729 20H14.6729V16H10.6729V20ZM4.67285 20H8.67285V16H4.67285V20ZM4.67285 14H8.67285V10H4.67285V14ZM10.6729 14H14.6729V10H10.6729V14ZM16.6729 4V8H20.6729V4H16.6729ZM10.6729 8H14.6729V4H10.6729V8ZM16.6729 14H20.6729V10H16.6729V14ZM16.6729 20H20.6729V16H16.6729V20Z"
+                            class="voice" />
+                    </svg>
+                    <svg class="account" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                        fill="none">
+                        <path
+                            d="M12.6729 22C13.7729 22 14.6729 21.1 14.6729 20H10.6729C10.6729 21.1 11.5629 22 12.6729 22ZM18.6729 16V11C18.6729 7.93 17.0329 5.36 14.1729 4.68V4C14.1729 3.17 13.5029 2.5 12.6729 2.5C11.8429 2.5 11.1729 3.17 11.1729 4V4.68C8.30285 5.36 6.67285 7.92 6.67285 11V16L4.67285 18V19H20.6729V18L18.6729 16Z"
+                            class="voice" />
+                    </svg>
+                    <img class="account-img" src="./image/user (1).png" alt="User">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="navbar-under-area">
+        <div class="navbar-unders" id="sidebar">
+            <div class="burger-under">
+                <ul class="navbar-links">
+                    <li class="navbar-link active">
+                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" class="style-scope yt-icon-active" />
+                        </svg>
+                        <h1 class="nav-name">Home</h1 class="nav-name">
+                    </li>
+                    <li class="navbar-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 24px; height: 24px;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M9.8,9.8l-3.83,8.23l8.23-3.83l3.83-8.23L9.8,9.8z M13.08,12.77c-0.21,0.29-0.51,0.48-0.86,0.54 c-0.07,0.01-0.15,0.02-0.22,0.02c-0.28,0-0.54-0.08-0.77-0.25c-0.29-0.21-0.48-0.51-0.54-0.86c-0.06-0.35,0.02-0.71,0.23-0.99 c0.21-0.29,0.51-0.48,0.86-0.54c0.35-0.06,0.7,0.02,0.99,0.23c0.29,0.21,0.48,0.51,0.54,0.86C13.37,12.13,13.29,12.48,13.08,12.77z M12,3c4.96,0,9,4.04,9,9s-4.04,9-9,9s-9-4.04-9-9S7.04,3,12,3 M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2 L12,2z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                        <h1 class="nav-name">Explore</h1>
+                    </li>
+                    <li class="navbar-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 24px; height: 24px;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M10,18v-6l5,3L10,18z M17,3H7v1h10V3z M20,6H4v1h16V6z M22,9H2v12h20V9z M3,10h18v10H3V10z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                        <h1 class="nav-name">Subscriptions</h1>
+                    </li>
+                    <li class="navbar-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 24px; height: 24px;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M11,7l6,3.5L11,14V7L11,7z M18,20H4V6H3v15h15V20z M21,18H6V3h15V18z M7,17h13V4H7V17z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                        <h1 class="nav-name">Library</h1>
+                    </li>
+                    <li class="navbar-link hidden">
+                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M2.12 13.526C2.862 18.306 7.022 21.996 12 21.996C17.5 21.996 22 17.496 22 11.998C22 6.5 17.5 2 12 2C10.4475 1.99984 8.91634 2.36123 7.52776 3.05552C6.13918 3.74981 4.93136 4.75792 4 6V2H2.003L2 9H9V7H5.8C7.2 5.2 9.502 4 12.002 4C16.4 4 20 7.6 20 11.998C20 16.396 16.4 19.998 12 19.998C8.123 19.998 4.87 17.203 4.152 13.526H2.12Z"
+                                class="style-scope yt-icon" />
+                            <path d="M11.002 7V12.3L14.202 16.598L15.802 15.401L13.002 11.701V7"
+                                class="style-scope yt-icon" />
+                        </svg>
+                        <h1 class="nav-name">History</h1>
+                    </li>
+                    <li class="navbar-link hidden">
+                        <svg class="nav-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 24px; height: 24px;">
+                            <g class="style-scope yt-icon">
+                                <path d="M10,8l6,4l-6,4V8L10,8z M21,3v18H3V3H21z M20,4H4v16h16V4z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                        <h1 class="nav-name">Your Videos</h1>
+                    </li>
+                    <li class="navbar-link hidden">
+                        <svg class="nav-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 24px; height: 24px;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M12,3c-4.96,0-9,4.04-9,9s4.04,9,9,9s9-4.04,9-9S16.96,3,12,3 M12,2c5.52,0,10,4.48,10,10s-4.48,10-10,10S2,17.52,2,12S6.48,2,12,2L12,2z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                        <h1 class="nav-name">Watch Later</h1>
+                    </li>
+                    <li class="navbar-link hidden">
+                        <svg class="nav-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 24px; height: 24px;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                        <h1 class="nav-name">Liked Videos</h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="basic-area">
+            <div class="renders-area">
+                <bottom class="render active">All</bottom>
+                <bottom class="render">User Interface design</bottom>
+                <bottom class="render">UI/UX</bottom>
+                <bottom class="render">Logos</bottom>
+                <bottom class="render">Computer science</bottom>
+                <bottom class="render">Sales</bottom>
+                <bottom class="render">Music</bottom>
+                <bottom class="render">Live</bottom>
+                <bottom class="render">Stock Market</bottom>
+                <bottom class="render">Mixes</bottom>
+                <bottom class="render">Lo-fi Music</bottom>
+                <bottom class="render">BTS</bottom>
+            </div>
+            <div class="videos-area">
+                <div class="videos">
+                    <div class="video">
+                        <img src="./image/video-1.png" alt="JYP Entertainment">
+                        <div class="video-account">
+                            <img src="./image/account-1.png" alt="channel-1">
+                            <div class="video-about">
+                                <h2>TWICE "Alcohol-Free" M/V</h2>
+                                <p class="about">JYP Entertainment</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-2.png" alt="Video-2">
+                        <div class="video-account">
+                            <img src="./image/channel-2.png" alt="Channel-2">
+                            </svg>
+                            <div class="video-about">
+                                <h2>Kanye West Sunday Service - "Father <br> Stretch My Hands" (Live From Paris...</h2>
+                                <p class="about">Kanye West</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-3.png" alt="Video-3">
+                        <div class="video-account">
+                            <img src="./image/channel-3.png" alt="channel-3">
+                            <div class="video-about">
+                                <h2>Abbot - Visão de Futuro
+                                    (trap sp)</h2>
+                                <p class="about">Abbot</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-4.png" alt="Video-4">
+                        <div class="video-account">
+                            <img src="./image/channel-4.png" alt="channel-4">
+                            <div class="video-about">
+                                <h2>Luedji Luna - Bom Mesmo É Estar Debaixo D'Água (Álbum Visual)</h2>
+                                <p class="about">Luedji Luna</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="videos">
+
+                    <div class="video">
+                        <img src="./image/video-5.png" alt="Video-5">
+                        <div class="video-account">
+                            <img src="./image/channel-5.png" alt="channel-5">
+                            <div class="video-about">
+                                <h2>Elza Soares - Mulher do Fim
+                                    do Mundo (Clipe Oficial)</h2>
+                                <p class="about">Elza Soares</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-6.png" alt="Video-6">
+                        <div class="video-account">
+                            <img src="./image/channel-6.png" alt="channel-6">
+                            <div class="video-about">
+                                <h2>Aretha Franklin - Ever Changing Times (Official Music Video)...</h2>
+                                <p class="about">Aretha Franklin</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-7.png" alt="Video-7">
+                        <div class="video-account">
+                            <img src="./image/channel-7.png" alt="channel-7">
+                            <div class="video-about">
+                                <h2>Chance the Rapper - Same Drugs (Official Video)</h2>
+                                <p class="about">Chance the Rapper</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-8.png" alt="Video-8">
+                        <div class="video-account">
+                            <img src="./image/channel-8.png" alt="channel-8">
+                            <div class="video-about">
+                                <h2>Criolo - Menino Mimado
+                                    (Single)</h2>
+                                <p class="about">Criolo</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="videos">
+
+                    <div class="video">
+                        <img src="./image/video-5.png" alt="Video-5">
+                        <div class="video-account">
+                            <img src="./image/channel-5.png" alt="channel-5">
+                            <div class="video-about">
+                                <h2>Elza Soares - Mulher do Fim
+                                    do Mundo (Clipe Oficial)</h2>
+                                <p class="about">Elza Soares</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-6.png" alt="Video-6">
+                        <div class="video-account">
+                            <img src="./image/channel-6.png" alt="channel-6">
+                            <div class="video-about">
+                                <h2>Aretha Franklin - Ever Changing Times (Official Music Video)...</h2>
+                                <p class="about">Aretha Franklin</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-7.png" alt="Video-7">
+                        <div class="video-account">
+                            <img src="./image/channel-7.png" alt="channel-7">
+                            <div class="video-about">
+                                <h2>Chance the Rapper - Same Drugs (Official Video)</h2>
+                                <p class="about">Chance the Rapper</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-8.png" alt="Video-8">
+                        <div class="video-account">
+                            <img src="./image/channel-8.png" alt="channel-8">
+                            <div class="video-about">
+                                <h2>Criolo - Menino Mimado
+                                    (Single)</h2>
+                                <p class="about">Criolo</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="videos">
+                    <div class="video">
+                        <img src="./image/video-1.png" alt="JYP Entertainment">
+                        <div class="video-account">
+                            <img src="./image/account-1.png" alt="channel-1">
+                            <div class="video-about">
+                                <h2>TWICE "Alcohol-Free" M/V</h2>
+                                <p class="about">JYP Entertainment</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-2.png" alt="Video-2">
+                        <div class="video-account">
+                            <img src="./image/channel-2.png" alt="Channel-2">
+                            </svg>
+                            <div class="video-about">
+                                <h2>Kanye West Sunday Service - "Father <br> Stretch My Hands" (Live From Paris...</h2>
+                                <p class="about">Kanye West</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-3.png" alt="Video-3">
+                        <div class="video-account">
+                            <img src="./image/channel-3.png" alt="channel-3">
+                            <div class="video-about">
+                                <h2>Abbot - Visão de Futuro
+                                    (trap sp)</h2>
+                                <p class="about">Abbot</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="./image/video-4.png" alt="Video-4">
+                        <div class="video-account">
+                            <img src="./image/channel-4.png" alt="channel-4">
+                            <div class="video-about">
+                                <h2>Luedji Luna - Bom Mesmo É Estar Debaixo D'Água (Álbum Visual)</h2>
+                                <p class="about">Luedji Luna</p>
+                                <p>130M views • 1 Month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
